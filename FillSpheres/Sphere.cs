@@ -11,7 +11,7 @@ namespace FillSpheres
         private int radius;
         private int throwCount;
 
-        public Sphere(Color color, int radius, int throwCount)
+        public Sphere(Color color, int radius)
         {
             this.color = color;
             this.radius = radius;
@@ -32,6 +32,16 @@ namespace FillSpheres
         public int GetTimesThrown()
         {
             return throwCount;
+        }
+
+        public string GetColor()
+        {
+            return $"({color.GetRed()}, {color.GetGreen()}, {color.GetBlue()})";
+        }
+
+        public int GetRadius()
+        {
+            return radius;
         }
     }
 }
