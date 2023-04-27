@@ -9,13 +9,13 @@ namespace BetterFillSpheres
     {
         public Color Color { get; set; }
         public int Radius { get; private set; }
-        public int ThrowCount { get; set; }
+        public int TimesThrown { get; set; }
 
         public Sphere(Color color, int radius)
         {
             Color = color;
             Radius = radius;
-            ThrowCount = 0;
+            TimesThrown = 0;
         }
 
         public void Pop()
@@ -26,7 +26,7 @@ namespace BetterFillSpheres
         public void Throw()
         {
             if (Radius > 0)
-                ThrowCount++;
+                TimesThrown++;
         }
 
         public string GetColor()
