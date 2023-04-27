@@ -46,7 +46,7 @@ namespace FillSpheres
         {
             this.blue = blue;
         }
-        
+
         public byte GetAlpha()
         {
             return alpha;
@@ -54,6 +54,11 @@ namespace FillSpheres
         public void SetAlpha(byte alpha)
         {
             this.alpha = alpha;
+        }
+
+        public byte GetGrey()
+        {
+            return ((red + green + blue) / 3);
         }
     }
 }
