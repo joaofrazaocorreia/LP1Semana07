@@ -36,6 +36,7 @@ namespace BetterFillSpheres
                 Console.WriteLine("");
             }
 
+            Console.WriteLine(Color.Name(yellow));
         }
     }
 }

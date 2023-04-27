@@ -24,5 +24,18 @@ namespace BetterFillSpheres
         {
             return (byte)((Red + Green + Blue) / 3);
         }
+
+        public static string Name(Color color)
+        {
+            return color switch
+            {
+                null => "This value is null.",
+                { Red: 255, Green: 0, Blue: 0} => "Red 100%",
+                { Red: 0, Green: 255, Blue: 0} => "Green 100%",
+                { Red: 0, Green: 0, Blue: 255} => "Blue 100%",
+                _ => "Mixed"
+
+            };
+        }
     }
 }
