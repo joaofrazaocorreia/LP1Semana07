@@ -7,14 +7,7 @@ namespace BetterFillSpheres
 {
     public class Sphere
     {
-        public Color Color
-        {
-            get
-            {
-                return $"({color.GetRed()}, {color.GetGreen()}, " +
-                       $"{color.GetBlue()})";
-            }
-        }
+        public Color Color { get; set; }
         public int Radius { get; private set; }
         public int ThrowCount { get; set; }
 
@@ -22,18 +15,23 @@ namespace BetterFillSpheres
         {
             Color = color;
             Radius = radius;
-            throwCount = 0;
+            ThrowCount = 0;
         }
 
         public void Pop()
         {
-            radius = 0;
+            Radius = 0;
         }
 
         public void Throw()
         {
-            if (radius > 0)
-                throwCount++;
+            if (Radius > 0)
+                ThrowCount++;
+        }
+
+        public string GetColor()
+        {
+            return $"({Color.Red}, {Color.Green}, {Color.Blue})";
         }
     }
 }
