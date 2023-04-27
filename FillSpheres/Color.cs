@@ -58,7 +58,7 @@ namespace FillSpheres
 
         public byte GetGrey()
         {
-            return ((red + green + blue) / 3);
+            return (byte)((red + green + blue) / 3);
         }
     }
 }
