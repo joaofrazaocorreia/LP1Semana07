@@ -19,5 +19,41 @@ namespace FillSpheres
             this.blue = blue;
             alpha = 255;
         }
+
+        public byte GetRed()
+        {
+            return red;
+        }
+        public void SetRed(byte red)
+        {
+            this.red = red;
+        }
+
+        public byte GetGreen()
+        {
+            return green;
+        }
+        public void SetGreen(byte green)
+        {
+            this.green = green;
+        }
+
+        public byte GetBlue()
+        {
+            return blue;
+        }
+        public void SetBlue(byte blue)
+        {
+            this.blue = blue;
+        }
+        
+        public byte GetAlpha()
+        {
+            return alpha;
+        }
+        public void SetAlpha(byte alpha)
+        {
+            this.alpha = alpha;
+        }
     }
 }
