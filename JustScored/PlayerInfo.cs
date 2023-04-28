@@ -11,6 +11,20 @@ namespace JustScored
         private int gamesPlayed;
         private int gamesWon;
 
+        public float MaxScore
+        {
+            get
+            {
+                return maxScore;
+            }
+            set
+            {
+                if (value > maxScore)
+                {
+                    maxScore = value;
+                }
+            }
+        }
 
 
     }
