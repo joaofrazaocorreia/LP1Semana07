@@ -53,5 +53,13 @@ namespace JustScored
             }
         }
 
+
+        public PlayerInfo(string name)
+        {
+            this.Name = name;
+            gamesPlayed = 0;
+            gamesWon = 0;
+            maxScore = 0;
+        }
     }
 }
