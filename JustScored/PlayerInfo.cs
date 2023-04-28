@@ -44,5 +44,14 @@ namespace JustScored
             }
         }
 
+        public void AddGame(bool win)
+        {
+            gamesPlayed++;
+            if (win)
+            {
+                gamesWon++;
+            }
+        }
+
     }
 }
