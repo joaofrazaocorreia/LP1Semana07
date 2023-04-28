@@ -39,7 +39,7 @@ namespace JustScored
 
                 else
                 {
-                    return gamesWon / gamesPlayed;
+                    return (float)gamesWon / gamesPlayed;
                 }
             }
         }
